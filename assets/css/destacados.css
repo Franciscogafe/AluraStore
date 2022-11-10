@@ -1,0 +1,19 @@
+.destaques{
+    /* Defino el grid */
+    display: grid;
+
+    /* Defino las columnas => 4 de 25% cada una */
+    grid-template-columns: 25% 25% 25% 25%;
+
+    /* Defino las lineas => 3 de 33.33% cada una */
+    grid-template-rows: 33.33% 33.33% 33.33%;
+
+    /* calcule el 100% del largo de la pantalla menos -50px del encabezado */
+    height: calc(100vh -50px);
+}
+
+.destaques__principal{
+    background: url("../img/fortnite.jpg");
+    grid-column-start: 1;
+    grid-column-end: 3;
+}

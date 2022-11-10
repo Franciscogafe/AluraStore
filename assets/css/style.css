@@ -1,0 +1,38 @@
+.app {
+    background: #f1f1f1;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    /* Defino el grid */
+    display: grid; 
+    
+    /* Defino las areas */
+    grid-template-areas: 
+    "encabezado"
+    "contenido"
+    "rodapie";
+
+    /* Defino las columnas */
+    grid-template-columns: auto;
+
+    /* Defino las lineas "/header/contenido/footer/" */
+    /* Esta unidad esta basada en el alto de vista de la ventana, El valor de 1vh es equivalente al 1% del del alto del área de visualización. Mientras que 100vh equivale al 100% del alto de área de visualización. */
+    grid-template-rows: 50px 100vh auto;
+}
+
+.encabezado {
+    background-color: #00cc99;
+
+    /* Defino las areas */
+    grid-area: encabezado;
+}
+.contenido {
+    /* Defino las areas */
+    grid-area: contenido;
+}
+
+.rodapie { 
+    background-color: #0099ff;
+
+    /* Defino las areas */
+    grid-area: rodapie;
+}
