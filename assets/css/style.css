@@ -28,6 +28,7 @@
 .contenido {
     /* Defino las areas */
     grid-area: contenido;
+    
 }
 
 .rodapie { 
